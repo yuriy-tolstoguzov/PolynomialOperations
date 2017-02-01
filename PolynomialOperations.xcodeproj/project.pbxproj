@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		113E96151E3FAECB0022E898 /* libPolynomialOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A85E941E1AC91000DD38C0 /* libPolynomialOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		116DFFE11E3FB23000050737 /* PolynomialOperations.c in Sources */ = {isa = PBXBuildFile; fileRef = 11A85E811E1583FC00DD38C0 /* PolynomialOperations.c */; };
+		116DFFE41E3FB3C000050737 /* RationalPolynomialOperations.c in Sources */ = {isa = PBXBuildFile; fileRef = 117AC80A1E338FC800C9EC6A /* RationalPolynomialOperations.c */; };
+		116DFFE51E3FB5A600050737 /* PolynomialRow.c in Sources */ = {isa = PBXBuildFile; fileRef = 117AC80F1E34D89200C9EC6A /* PolynomialRow.c */; };
+		116DFFE61E3FB5AB00050737 /* PolynomialMatrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 117AC80C1E33AD7000C9EC6A /* PolynomialMatrix.c */; };
+		116DFFE71E3FB5AF00050737 /* PolynomialDecimation.c in Sources */ = {isa = PBXBuildFile; fileRef = 113E96071E3FA7820022E898 /* PolynomialDecimation.c */; };
+		116DFFE81E3FB5C300050737 /* RationalStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AC8161E37E68200C9EC6A /* RationalStringTests.m */; };
+		116DFFE91E3FB5C300050737 /* RationalMultiplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AC8181E37EAB200C9EC6A /* RationalMultiplicationTests.m */; };
+		116DFFEA1E3FB5C300050737 /* RationalDivisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AC8121E34FB0600C9EC6A /* RationalDivisionTests.m */; };
+		116DFFEB1E3FB5C300050737 /* RationalComparisonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AC8141E34FD7A00C9EC6A /* RationalComparisonTests.m */; };
+		116DFFEC1E3FB5C300050737 /* RationalReductionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11919D551E39208800C7976D /* RationalReductionTests.m */; };
+		116DFFED1E3FB5C300050737 /* RationalShiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11919D571E39252000C7976D /* RationalShiftTests.m */; };
+		116DFFEE1E3FB5C300050737 /* RationalSwapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11919D591E3CD52C00C7976D /* RationalSwapTests.m */; };
+		116DFFEF1E3FB5C300050737 /* RowInitSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11919D5B1E3CD6C300C7976D /* RowInitSetTests.m */; };
+		116DFFF01E3FB5C300050737 /* RowLeftShiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11919D5D1E3CD8FD00C7976D /* RowLeftShiftTests.m */; };
+		116DFFF11E3FB5C300050737 /* MatrixSizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF2A61E3CE19600B7F7C6 /* MatrixSizeTests.m */; };
+		116DFFF21E3FB5C300050737 /* MatrixInitSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF2A81E3CE44A00B7F7C6 /* MatrixInitSetTests.m */; };
+		116DFFF31E3FB5C300050737 /* MatrixFromPolinomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF2AA1E3D0BAE00B7F7C6 /* MatrixFromPolinomTests.m */; };
+		116DFFF41E3FB5C300050737 /* MatrixFromArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E96051E3FA5220022E898 /* MatrixFromArrayTests.m */; };
+		116DFFF51E3FB5C300050737 /* MatrixAdditionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF2AC1E3DDD0500B7F7C6 /* MatrixAdditionTests.m */; };
+		116DFFF61E3FB5C300050737 /* MatrixMultiplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF2AE1E3DE02B00B7F7C6 /* MatrixMultiplicationTests.m */; };
+		116DFFF71E3FB5C300050737 /* MatrixComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF2B01E3DE2A500B7F7C6 /* MatrixComparison.m */; };
+		116DFFF81E3FB5C300050737 /* MatrixPowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF2B21E3DE70900B7F7C6 /* MatrixPowerTests.m */; };
+		116DFFF91E3FB5C300050737 /* MatrixStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF2B41E3DF6AB00B7F7C6 /* MatrixStringTests.m */; };
+		116DFFFA1E3FB5C300050737 /* MatrixToUpperTriangularFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF2B61E3E1AD800B7F7C6 /* MatrixToUpperTriangularFormTests.m */; };
+		116DFFFB1E3FB5C300050737 /* MatrixDeterminantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EFF2B81E3E55B200B7F7C6 /* MatrixDeterminantTests.m */; };
+		116DFFFC1E3FB5C300050737 /* MatrixDecimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 113E960B1E3FAA0E0022E898 /* MatrixDecimationTests.m */; };
+		116DFFFE1E41DD5700050737 /* DecimationPerformanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 116DFFFD1E41DD5700050737 /* DecimationPerformanceTests.m */; };
+		117AC8031E2BB80200C9EC6A /* PolynomialMultiplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AC8021E2BB80200C9EC6A /* PolynomialMultiplicationTests.m */; };
+		117AC8061E2BB9D000C9EC6A /* TestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AC8051E2BB9D000C9EC6A /* TestUtils.m */; };
+		117AC8081E328A0F00C9EC6A /* PolynomialDivisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AC8071E328A0F00C9EC6A /* PolynomialDivisionTests.m */; };
+		11A85E8C1E1AC8C700DD38C0 /* PolynomialStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A85E8B1E1AC8C700DD38C0 /* PolynomialStringTests.m */; };
+		11A85E8E1E1AC8C700DD38C0 /* libPolynomialOperations.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A85E721E15800000DD38C0 /* libPolynomialOperations.dylib */; };
+		11F121421E1AD4B700F1C28D /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F121411E1AD4B700F1C28D /* libgmp.10.dylib */; };
+		11F121431E1AD4D500F1C28D /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F121411E1AD4B700F1C28D /* libgmp.10.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11A85E8F1E1AC8C700DD38C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11A85E6A1E157FFF00DD38C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11A85E711E157FFF00DD38C0;
+			remoteInfo = PolinomialOperations;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		113E96051E3FA5220022E898 /* MatrixFromArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixFromArrayTests.m; sourceTree = "<group>"; };
+		113E96071E3FA7820022E898 /* PolynomialDecimation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PolynomialDecimation.c; sourceTree = "<group>"; };
+		113E96081E3FA7820022E898 /* PolynomialDecimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolynomialDecimation.h; sourceTree = "<group>"; };
+		113E960B1E3FAA0E0022E898 /* MatrixDecimationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixDecimationTests.m; sourceTree = "<group>"; };
+		116DFFFD1E41DD5700050737 /* DecimationPerformanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimationPerformanceTests.m; sourceTree = "<group>"; };
+		117AC8021E2BB80200C9EC6A /* PolynomialMultiplicationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolynomialMultiplicationTests.m; sourceTree = "<group>"; };
+		117AC8041E2BB97A00C9EC6A /* TestUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUtils.h; sourceTree = "<group>"; };
+		117AC8051E2BB9D000C9EC6A /* TestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUtils.m; sourceTree = "<group>"; };
+		117AC8071E328A0F00C9EC6A /* PolynomialDivisionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolynomialDivisionTests.m; sourceTree = "<group>"; };
+		117AC8091E3295BF00C9EC6A /* RationalPolynomialOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RationalPolynomialOperations.h; sourceTree = "<group>"; };
+		117AC80A1E338FC800C9EC6A /* RationalPolynomialOperations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RationalPolynomialOperations.c; sourceTree = "<group>"; };
+		117AC80C1E33AD7000C9EC6A /* PolynomialMatrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PolynomialMatrix.c; sourceTree = "<group>"; };
+		117AC80D1E33AD7000C9EC6A /* PolynomialMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolynomialMatrix.h; sourceTree = "<group>"; };
+		117AC80F1E34D89200C9EC6A /* PolynomialRow.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PolynomialRow.c; sourceTree = "<group>"; };
+		117AC8101E34D89200C9EC6A /* PolynomialRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolynomialRow.h; sourceTree = "<group>"; };
+		117AC8121E34FB0600C9EC6A /* RationalDivisionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalDivisionTests.m; sourceTree = "<group>"; };
+		117AC8141E34FD7A00C9EC6A /* RationalComparisonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalComparisonTests.m; sourceTree = "<group>"; };
+		117AC8161E37E68200C9EC6A /* RationalStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalStringTests.m; sourceTree = "<group>"; };
+		117AC8181E37EAB200C9EC6A /* RationalMultiplicationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalMultiplicationTests.m; sourceTree = "<group>"; };
+		11919D551E39208800C7976D /* RationalReductionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalReductionTests.m; sourceTree = "<group>"; };
+		11919D571E39252000C7976D /* RationalShiftTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalShiftTests.m; sourceTree = "<group>"; };
+		11919D591E3CD52C00C7976D /* RationalSwapTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalSwapTests.m; sourceTree = "<group>"; };
+		11919D5B1E3CD6C300C7976D /* RowInitSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowInitSetTests.m; sourceTree = "<group>"; };
+		11919D5D1E3CD8FD00C7976D /* RowLeftShiftTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowLeftShiftTests.m; sourceTree = "<group>"; };
+		11A85E721E15800000DD38C0 /* libPolynomialOperations.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libPolynomialOperations.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A85E7A1E15832D00DD38C0 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = ../PolinomDecimation/OSXGMP/Libraries/libgmp.a; sourceTree = "<group>"; };
+		11A85E7E1E15835A00DD38C0 /* gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gmp.h; path = ../PolinomDecimation/OSXGMP/Libraries/gmp.h; sourceTree = "<group>"; };
+		11A85E811E1583FC00DD38C0 /* PolynomialOperations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PolynomialOperations.c; sourceTree = "<group>"; };
+		11A85E821E1583FC00DD38C0 /* PolynomialOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolynomialOperations.h; sourceTree = "<group>"; };
+		11A85E891E1AC8C700DD38C0 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A85E8B1E1AC8C700DD38C0 /* PolynomialStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolynomialStringTests.m; sourceTree = "<group>"; };
+		11A85E8D1E1AC8C700DD38C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A85E941E1AC91000DD38C0 /* libPolynomialOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libPolynomialOperations.h; sourceTree = "<group>"; };
+		11EFF2A61E3CE19600B7F7C6 /* MatrixSizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixSizeTests.m; sourceTree = "<group>"; };
+		11EFF2A81E3CE44A00B7F7C6 /* MatrixInitSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixInitSetTests.m; sourceTree = "<group>"; };
+		11EFF2AA1E3D0BAE00B7F7C6 /* MatrixFromPolinomTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixFromPolinomTests.m; sourceTree = "<group>"; };
+		11EFF2AC1E3DDD0500B7F7C6 /* MatrixAdditionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixAdditionTests.m; sourceTree = "<group>"; };
+		11EFF2AE1E3DE02B00B7F7C6 /* MatrixMultiplicationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixMultiplicationTests.m; sourceTree = "<group>"; };
+		11EFF2B01E3DE2A500B7F7C6 /* MatrixComparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixComparison.m; sourceTree = "<group>"; };
+		11EFF2B21E3DE70900B7F7C6 /* MatrixPowerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixPowerTests.m; sourceTree = "<group>"; };
+		11EFF2B41E3DF6AB00B7F7C6 /* MatrixStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixStringTests.m; sourceTree = "<group>"; };
+		11EFF2B61E3E1AD800B7F7C6 /* MatrixToUpperTriangularFormTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixToUpperTriangularFormTests.m; sourceTree = "<group>"; };
+		11EFF2B81E3E55B200B7F7C6 /* MatrixDeterminantTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixDeterminantTests.m; sourceTree = "<group>"; };
+		11F121411E1AD4B700F1C28D /* libgmp.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.10.dylib; path = Libraries/libgmp.10.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11A85E6F1E157FFF00DD38C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F121421E1AD4B700F1C28D /* libgmp.10.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11A85E861E1AC8C700DD38C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A85E8E1E1AC8C700DD38C0 /* libPolynomialOperations.dylib in Frameworks */,
+				11F121431E1AD4D500F1C28D /* libgmp.10.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11A85E691E157FFF00DD38C0 = {
+			isa = PBXGroup;
+			children = (
+				11A85E801E15838700DD38C0 /* Logic */,
+				11A85E8A1E1AC8C700DD38C0 /* Tests */,
+				11A85E731E15800000DD38C0 /* Products */,
+				11A85E791E15832D00DD38C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11A85E731E15800000DD38C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11A85E721E15800000DD38C0 /* libPolynomialOperations.dylib */,
+				11A85E891E1AC8C700DD38C0 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11A85E791E15832D00DD38C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11A85E7E1E15835A00DD38C0 /* gmp.h */,
+				11A85E7A1E15832D00DD38C0 /* libgmp.a */,
+				11F121411E1AD4B700F1C28D /* libgmp.10.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11A85E801E15838700DD38C0 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				11A85E821E1583FC00DD38C0 /* PolynomialOperations.h */,
+				11A85E811E1583FC00DD38C0 /* PolynomialOperations.c */,
+				117AC8091E3295BF00C9EC6A /* RationalPolynomialOperations.h */,
+				117AC80A1E338FC800C9EC6A /* RationalPolynomialOperations.c */,
+				117AC8101E34D89200C9EC6A /* PolynomialRow.h */,
+				117AC80F1E34D89200C9EC6A /* PolynomialRow.c */,
+				117AC80D1E33AD7000C9EC6A /* PolynomialMatrix.h */,
+				117AC80C1E33AD7000C9EC6A /* PolynomialMatrix.c */,
+				113E96081E3FA7820022E898 /* PolynomialDecimation.h */,
+				113E96071E3FA7820022E898 /* PolynomialDecimation.c */,
+				11A85E941E1AC91000DD38C0 /* libPolynomialOperations.h */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		11A85E8A1E1AC8C700DD38C0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				117AC8041E2BB97A00C9EC6A /* TestUtils.h */,
+				117AC8051E2BB9D000C9EC6A /* TestUtils.m */,
+				11A85E8B1E1AC8C700DD38C0 /* PolynomialStringTests.m */,
+				117AC8021E2BB80200C9EC6A /* PolynomialMultiplicationTests.m */,
+				117AC8071E328A0F00C9EC6A /* PolynomialDivisionTests.m */,
+				117AC8161E37E68200C9EC6A /* RationalStringTests.m */,
+				117AC8181E37EAB200C9EC6A /* RationalMultiplicationTests.m */,
+				117AC8121E34FB0600C9EC6A /* RationalDivisionTests.m */,
+				117AC8141E34FD7A00C9EC6A /* RationalComparisonTests.m */,
+				11919D551E39208800C7976D /* RationalReductionTests.m */,
+				11919D571E39252000C7976D /* RationalShiftTests.m */,
+				11919D591E3CD52C00C7976D /* RationalSwapTests.m */,
+				11919D5B1E3CD6C300C7976D /* RowInitSetTests.m */,
+				11919D5D1E3CD8FD00C7976D /* RowLeftShiftTests.m */,
+				11EFF2A61E3CE19600B7F7C6 /* MatrixSizeTests.m */,
+				11EFF2A81E3CE44A00B7F7C6 /* MatrixInitSetTests.m */,
+				11EFF2AA1E3D0BAE00B7F7C6 /* MatrixFromPolinomTests.m */,
+				113E96051E3FA5220022E898 /* MatrixFromArrayTests.m */,
+				11EFF2AC1E3DDD0500B7F7C6 /* MatrixAdditionTests.m */,
+				11EFF2AE1E3DE02B00B7F7C6 /* MatrixMultiplicationTests.m */,
+				11EFF2B01E3DE2A500B7F7C6 /* MatrixComparison.m */,
+				11EFF2B21E3DE70900B7F7C6 /* MatrixPowerTests.m */,
+				11EFF2B41E3DF6AB00B7F7C6 /* MatrixStringTests.m */,
+				11EFF2B61E3E1AD800B7F7C6 /* MatrixToUpperTriangularFormTests.m */,
+				11EFF2B81E3E55B200B7F7C6 /* MatrixDeterminantTests.m */,
+				113E960B1E3FAA0E0022E898 /* MatrixDecimationTests.m */,
+				116DFFFD1E41DD5700050737 /* DecimationPerformanceTests.m */,
+				11A85E8D1E1AC8C700DD38C0 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11A85E701E157FFF00DD38C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113E96151E3FAECB0022E898 /* libPolynomialOperations.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		11A85E711E157FFF00DD38C0 /* PolynomialOperations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11A85E761E15800000DD38C0 /* Build configuration list for PBXNativeTarget "PolynomialOperations" */;
+			buildPhases = (
+				11A85E6E1E157FFF00DD38C0 /* Sources */,
+				11A85E6F1E157FFF00DD38C0 /* Frameworks */,
+				11A85E701E157FFF00DD38C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PolynomialOperations;
+			productName = PolinomialOperations;
+			productReference = 11A85E721E15800000DD38C0 /* libPolynomialOperations.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		11A85E881E1AC8C700DD38C0 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11A85E911E1AC8C700DD38C0 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				11A85E851E1AC8C700DD38C0 /* Sources */,
+				11A85E861E1AC8C700DD38C0 /* Frameworks */,
+				11A85E871E1AC8C700DD38C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11A85E901E1AC8C700DD38C0 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 11A85E891E1AC8C700DD38C0 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11A85E6A1E157FFF00DD38C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Yuriy Tolstoguzov";
+				TargetAttributes = {
+					11A85E711E157FFF00DD38C0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 92E3HC5PX8;
+						ProvisioningStyle = Automatic;
+					};
+					11A85E881E1AC8C700DD38C0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 92E3HC5PX8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 11A85E6D1E157FFF00DD38C0 /* Build configuration list for PBXProject "PolynomialOperations" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11A85E691E157FFF00DD38C0;
+			productRefGroup = 11A85E731E15800000DD38C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11A85E711E157FFF00DD38C0 /* PolynomialOperations */,
+				11A85E881E1AC8C700DD38C0 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11A85E871E1AC8C700DD38C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11A85E6E1E157FFF00DD38C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116DFFE41E3FB3C000050737 /* RationalPolynomialOperations.c in Sources */,
+				116DFFE51E3FB5A600050737 /* PolynomialRow.c in Sources */,
+				116DFFE11E3FB23000050737 /* PolynomialOperations.c in Sources */,
+				116DFFE71E3FB5AF00050737 /* PolynomialDecimation.c in Sources */,
+				116DFFE61E3FB5AB00050737 /* PolynomialMatrix.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11A85E851E1AC8C700DD38C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117AC8061E2BB9D000C9EC6A /* TestUtils.m in Sources */,
+				116DFFF61E3FB5C300050737 /* MatrixMultiplicationTests.m in Sources */,
+				116DFFF11E3FB5C300050737 /* MatrixSizeTests.m in Sources */,
+				116DFFFE1E41DD5700050737 /* DecimationPerformanceTests.m in Sources */,
+				116DFFE91E3FB5C300050737 /* RationalMultiplicationTests.m in Sources */,
+				116DFFEC1E3FB5C300050737 /* RationalReductionTests.m in Sources */,
+				116DFFF71E3FB5C300050737 /* MatrixComparison.m in Sources */,
+				116DFFFB1E3FB5C300050737 /* MatrixDeterminantTests.m in Sources */,
+				116DFFFC1E3FB5C300050737 /* MatrixDecimationTests.m in Sources */,
+				116DFFF51E3FB5C300050737 /* MatrixAdditionTests.m in Sources */,
+				116DFFF41E3FB5C300050737 /* MatrixFromArrayTests.m in Sources */,
+				11A85E8C1E1AC8C700DD38C0 /* PolynomialStringTests.m in Sources */,
+				116DFFED1E3FB5C300050737 /* RationalShiftTests.m in Sources */,
+				116DFFEE1E3FB5C300050737 /* RationalSwapTests.m in Sources */,
+				116DFFE81E3FB5C300050737 /* RationalStringTests.m in Sources */,
+				116DFFF21E3FB5C300050737 /* MatrixInitSetTests.m in Sources */,
+				116DFFEB1E3FB5C300050737 /* RationalComparisonTests.m in Sources */,
+				117AC8031E2BB80200C9EC6A /* PolynomialMultiplicationTests.m in Sources */,
+				116DFFF91E3FB5C300050737 /* MatrixStringTests.m in Sources */,
+				116DFFF01E3FB5C300050737 /* RowLeftShiftTests.m in Sources */,
+				116DFFFA1E3FB5C300050737 /* MatrixToUpperTriangularFormTests.m in Sources */,
+				116DFFEA1E3FB5C300050737 /* RationalDivisionTests.m in Sources */,
+				116DFFF31E3FB5C300050737 /* MatrixFromPolinomTests.m in Sources */,
+				117AC8081E328A0F00C9EC6A /* PolynomialDivisionTests.m in Sources */,
+				116DFFF81E3FB5C300050737 /* MatrixPowerTests.m in Sources */,
+				116DFFEF1E3FB5C300050737 /* RowInitSetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11A85E901E1AC8C700DD38C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11A85E711E157FFF00DD38C0 /* PolynomialOperations */;
+			targetProxy = 11A85E8F1E1AC8C700DD38C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11A85E741E15800000DD38C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		11A85E751E15800000DD38C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		11A85E771E15800000DD38C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 92E3HC5PX8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					Libraries,
+					"$(PROJECT_DIR)/Libraries",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11A85E781E15800000DD38C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 92E3HC5PX8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					Libraries,
+					"$(PROJECT_DIR)/Libraries",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		11A85E921E1AC8C700DD38C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 92E3HC5PX8;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					Libraries,
+					"$(PROJECT_DIR)/Libraries",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuriy-tolstoguzov.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11A85E931E1AC8C700DD38C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 92E3HC5PX8;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					Libraries,
+					"$(PROJECT_DIR)/Libraries",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yuriy-tolstoguzov.Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11A85E6D1E157FFF00DD38C0 /* Build configuration list for PBXProject "PolynomialOperations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11A85E741E15800000DD38C0 /* Debug */,
+				11A85E751E15800000DD38C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11A85E761E15800000DD38C0 /* Build configuration list for PBXNativeTarget "PolynomialOperations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11A85E771E15800000DD38C0 /* Debug */,
+				11A85E781E15800000DD38C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11A85E911E1AC8C700DD38C0 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11A85E921E1AC8C700DD38C0 /* Debug */,
+				11A85E931E1AC8C700DD38C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11A85E6A1E157FFF00DD38C0 /* Project object */;
+}

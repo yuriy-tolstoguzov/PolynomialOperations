@@ -1,33 +1,23 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-# Precompiled Headers
-*.gch
-*.pch
+## Build generated
+build/
+DerivedData/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
