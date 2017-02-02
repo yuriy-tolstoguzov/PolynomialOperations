@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		113E96151E3FAECB0022E898 /* libPolynomialOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A85E941E1AC91000DD38C0 /* libPolynomialOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		116D00031E43363800050737 /* gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 116D00001E43363800050737 /* gmp.h */; };
+		116D00041E43363800050737 /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 116D00011E43363800050737 /* libgmp.10.dylib */; };
+		116D00061E43367B00050737 /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 116D00011E43363800050737 /* libgmp.10.dylib */; };
 		116DFFE11E3FB23000050737 /* PolynomialOperations.c in Sources */ = {isa = PBXBuildFile; fileRef = 11A85E811E1583FC00DD38C0 /* PolynomialOperations.c */; };
 		116DFFE41E3FB3C000050737 /* RationalPolynomialOperations.c in Sources */ = {isa = PBXBuildFile; fileRef = 117AC80A1E338FC800C9EC6A /* RationalPolynomialOperations.c */; };
 		116DFFE51E3FB5A600050737 /* PolynomialRow.c in Sources */ = {isa = PBXBuildFile; fileRef = 117AC80F1E34D89200C9EC6A /* PolynomialRow.c */; };
@@ -40,8 +43,6 @@
 		117AC8081E328A0F00C9EC6A /* PolynomialDivisionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 117AC8071E328A0F00C9EC6A /* PolynomialDivisionTests.m */; };
 		11A85E8C1E1AC8C700DD38C0 /* PolynomialStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A85E8B1E1AC8C700DD38C0 /* PolynomialStringTests.m */; };
 		11A85E8E1E1AC8C700DD38C0 /* libPolynomialOperations.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A85E721E15800000DD38C0 /* libPolynomialOperations.dylib */; };
-		11F121421E1AD4B700F1C28D /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F121411E1AD4B700F1C28D /* libgmp.10.dylib */; };
-		11F121431E1AD4D500F1C28D /* libgmp.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F121411E1AD4B700F1C28D /* libgmp.10.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,9 @@
 		113E96071E3FA7820022E898 /* PolynomialDecimation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PolynomialDecimation.c; sourceTree = "<group>"; };
 		113E96081E3FA7820022E898 /* PolynomialDecimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolynomialDecimation.h; sourceTree = "<group>"; };
 		113E960B1E3FAA0E0022E898 /* MatrixDecimationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixDecimationTests.m; sourceTree = "<group>"; };
+		116D00001E43363800050737 /* gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmp.h; sourceTree = "<group>"; };
+		116D00011E43363800050737 /* libgmp.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libgmp.10.dylib; sourceTree = "<group>"; };
+		116D00021E43363800050737 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
 		116DFFFD1E41DD5700050737 /* DecimationPerformanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimationPerformanceTests.m; sourceTree = "<group>"; };
 		117AC8021E2BB80200C9EC6A /* PolynomialMultiplicationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolynomialMultiplicationTests.m; sourceTree = "<group>"; };
 		117AC8041E2BB97A00C9EC6A /* TestUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUtils.h; sourceTree = "<group>"; };
@@ -80,8 +84,6 @@
 		11919D5B1E3CD6C300C7976D /* RowInitSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowInitSetTests.m; sourceTree = "<group>"; };
 		11919D5D1E3CD8FD00C7976D /* RowLeftShiftTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowLeftShiftTests.m; sourceTree = "<group>"; };
 		11A85E721E15800000DD38C0 /* libPolynomialOperations.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libPolynomialOperations.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		11A85E7A1E15832D00DD38C0 /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = ../PolinomDecimation/OSXGMP/Libraries/libgmp.a; sourceTree = "<group>"; };
-		11A85E7E1E15835A00DD38C0 /* gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gmp.h; path = ../PolinomDecimation/OSXGMP/Libraries/gmp.h; sourceTree = "<group>"; };
 		11A85E811E1583FC00DD38C0 /* PolynomialOperations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PolynomialOperations.c; sourceTree = "<group>"; };
 		11A85E821E1583FC00DD38C0 /* PolynomialOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolynomialOperations.h; sourceTree = "<group>"; };
 		11A85E891E1AC8C700DD38C0 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +100,6 @@
 		11EFF2B41E3DF6AB00B7F7C6 /* MatrixStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixStringTests.m; sourceTree = "<group>"; };
 		11EFF2B61E3E1AD800B7F7C6 /* MatrixToUpperTriangularFormTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixToUpperTriangularFormTests.m; sourceTree = "<group>"; };
 		11EFF2B81E3E55B200B7F7C6 /* MatrixDeterminantTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixDeterminantTests.m; sourceTree = "<group>"; };
-		11F121411E1AD4B700F1C28D /* libgmp.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgmp.10.dylib; path = Libraries/libgmp.10.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F121421E1AD4B700F1C28D /* libgmp.10.dylib in Frameworks */,
+				116D00041E43363800050737 /* libgmp.10.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,20 +116,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A85E8E1E1AC8C700DD38C0 /* libPolynomialOperations.dylib in Frameworks */,
-				11F121431E1AD4D500F1C28D /* libgmp.10.dylib in Frameworks */,
+				116D00061E43367B00050737 /* libgmp.10.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		116DFFFF1E43363800050737 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				116D00001E43363800050737 /* gmp.h */,
+				116D00011E43363800050737 /* libgmp.10.dylib */,
+				116D00021E43363800050737 /* libgmp.a */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 		11A85E691E157FFF00DD38C0 = {
 			isa = PBXGroup;
 			children = (
 				11A85E801E15838700DD38C0 /* Logic */,
 				11A85E8A1E1AC8C700DD38C0 /* Tests */,
+				116DFFFF1E43363800050737 /* Libraries */,
 				11A85E731E15800000DD38C0 /* Products */,
-				11A85E791E15832D00DD38C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,16 +150,6 @@
 				11A85E891E1AC8C700DD38C0 /* Tests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		11A85E791E15832D00DD38C0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				11A85E7E1E15835A00DD38C0 /* gmp.h */,
-				11A85E7A1E15832D00DD38C0 /* libgmp.a */,
-				11F121411E1AD4B700F1C28D /* libgmp.10.dylib */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		11A85E801E15838700DD38C0 /* Logic */ = {
@@ -212,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				113E96151E3FAECB0022E898 /* libPolynomialOperations.h in Headers */,
+				116D00031E43363800050737 /* gmp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

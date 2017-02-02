@@ -10,10 +10,10 @@
 #import "RationalPolynomialOperations.h"
 #import "TestUtils.h"
 
-
 @interface RationalReductionTests : XCTestCase
 
 @end
+
 
 @implementation RationalReductionTests
 

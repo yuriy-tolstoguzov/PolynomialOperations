@@ -10,10 +10,10 @@
 #import "TestUtils.h"
 #import "PolynomialRow.h"
 
-
 @interface RowInitSetTests : XCTestCase
 
 @end
+
 
 @implementation RowInitSetTests
 

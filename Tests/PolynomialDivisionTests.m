@@ -31,11 +31,11 @@
     pln_init(r);
     pln_div(q, r, lhs, rhs);
 
-    unsigned int expectedQuotient = 0b0;
-    XCTAssertEqual(pln_cmp_ui(q, expectedQuotient), kCompareFlagEqual);
+    unsigned int expected_q = 0b0;
+    XCTAssertEqual(pln_cmp_ui(q, expected_q), kCompareFlagEqual);
 
-    unsigned int expectedRemainder = 0b0;
-    XCTAssertEqual(pln_cmp_ui(r, expectedRemainder), kCompareFlagEqual);
+    unsigned int expected_r = 0b0;
+    XCTAssertEqual(pln_cmp_ui(r, expected_r), kCompareFlagEqual);
 }
 
 - (void)testDivision1_1 {
@@ -51,11 +51,11 @@
     pln_init(r);
     pln_div(q, r, lhs, rhs);
 
-    unsigned int expectedQuotient = 0b1;
-    XCTAssertEqual(pln_cmp_ui(q, expectedQuotient), kCompareFlagEqual);
+    unsigned int expected_q = 0b1;
+    XCTAssertEqual(pln_cmp_ui(q, expected_q), kCompareFlagEqual);
 
-    unsigned int expectedRemainder = 0b0;
-    XCTAssertEqual(pln_cmp_ui(r, expectedRemainder), kCompareFlagEqual);
+    unsigned int expected_r = 0b0;
+    XCTAssertEqual(pln_cmp_ui(r, expected_r), kCompareFlagEqual);
 }
 
 - (void)testDivision1_10 {
@@ -71,11 +71,11 @@
     pln_init(r);
     pln_div(q, r, op1, op2);
 
-    unsigned int expectedQuotient = 0b0;
-    XCTAssertEqual(pln_cmp_ui(q, expectedQuotient), kCompareFlagEqual);
+    unsigned int expected_q = 0b0;
+    XCTAssertEqual(pln_cmp_ui(q, expected_q), kCompareFlagEqual);
 
-    unsigned int expectedRemainder = 0b1;
-    XCTAssertEqual(pln_cmp_ui(r, expectedRemainder), kCompareFlagEqual);
+    unsigned int expected_r = 0b1;
+    XCTAssertEqual(pln_cmp_ui(r, expected_r), kCompareFlagEqual);
 }
 
 - (void)testDivision1001_11 {
@@ -91,11 +91,11 @@
     pln_init(r);
     pln_div(q, r, lhs, rhs);
 
-    unsigned int expectedQuotient = 0b111;
-    XCTAssertEqual(pln_cmp_ui(q, expectedQuotient), kCompareFlagEqual);
+    unsigned int expected_q = 0b111;
+    XCTAssertEqual(pln_cmp_ui(q, expected_q), kCompareFlagEqual);
 
-    unsigned int expectedRemainder = 0b0;
-    XCTAssertEqual(pln_cmp_ui(r, expectedRemainder), kCompareFlagEqual);
+    unsigned int expected_r = 0b0;
+    XCTAssertEqual(pln_cmp_ui(r, expected_r), kCompareFlagEqual);
 }
 
 - (void)testDivision1000_11 {
@@ -111,11 +111,11 @@
     pln_init(r);
     pln_div(q, r, lhs, rhs);
 
-    unsigned int expectedQuotient = 0b111;
-    XCTAssertEqual(pln_cmp_ui(q, expectedQuotient), kCompareFlagEqual);
+    unsigned int expected_q = 0b111;
+    XCTAssertEqual(pln_cmp_ui(q, expected_q), kCompareFlagEqual);
 
-    unsigned int expectedRemainder = 0b1;
-    XCTAssertEqual(pln_cmp_ui(r, expectedRemainder), kCompareFlagEqual);
+    unsigned int expected_r = 0b1;
+    XCTAssertEqual(pln_cmp_ui(r, expected_r), kCompareFlagEqual);
 }
 
 @end

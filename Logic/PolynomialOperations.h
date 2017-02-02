@@ -9,9 +9,6 @@
 #ifndef PolynomialOperations_h
 #define PolynomialOperations_h
 
-#include <stdio.h>
-#include <stdbool.h>
-
 #include "gmp.h"
 
 #define pln_t mpz_t

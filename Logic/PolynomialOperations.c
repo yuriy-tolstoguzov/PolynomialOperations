@@ -7,6 +7,7 @@
 //
 
 #include "PolynomialOperations.h"
+#include <stdio.h>
 
 // Arithmetics
 

@@ -6,10 +6,8 @@
 //  Copyright © 2017 Yuriy Tolstoguzov. All rights reserved.
 //
 
-#include <stdbool.h>
-#include <stdlib.h>
-#include <stdio.h>
 #include "PolynomialMatrix.h"
+#include <stdlib.h>
 
 // Init
 
@@ -166,11 +164,11 @@ void pln_mat_optimized_pow(pln_mat_t rop, pln_mat_t op, unsigned int power, size
 
 // Logical
 
-bool pln_mat_cmp(pln_mat_t op1, pln_mat_t op2, size_t size) {
+int pln_mat_cmp(pln_mat_t op1, pln_mat_t op2, size_t size) {
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
             if (r_pln_cmp(&op1[i][j], op2[i][j]) != 0) {
-                return 1;
+                return -1;
             }
         }
     }
@@ -213,17 +211,17 @@ void pln_mat_get_determinant(r_pln_t *rop, pln_mat_t op, size_t size) {
     }
 }
 
-bool pln_mat_check_u(pln_mat_t op, size_t size) {
+int pln_mat_check_u(pln_mat_t op, size_t size) {
     for (int row = 0; row < size; row++) {
         for (int col = 0; col < size; col++) {
             if (row > col && r_pln_cmp_ui(&op[row][col], 0b0)) {
-                return false;
+                return -1;
 
             }
         }
     }
 
-    return true;
+    return 0;
 }
 
 // Conversion

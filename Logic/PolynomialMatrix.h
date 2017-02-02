@@ -34,13 +34,13 @@ void pln_mat_optimized_pow(pln_mat_t rop, pln_mat_t op, unsigned int power, size
 
 // Logical
 
-bool pln_mat_cmp(pln_mat_t op1, pln_mat_t op2, size_t size);
+int pln_mat_cmp(pln_mat_t op1, pln_mat_t op2, size_t size);
 
 // Determinant
 
 void pln_mat_to_u(pln_mat_t rop, pln_mat_t op, size_t size);
 void pln_mat_get_determinant(r_pln_t *rop, pln_mat_t op, size_t size);
-bool pln_mat_check_u(pln_mat_t op, size_t size);
+int pln_mat_check_u(pln_mat_t op, size_t size);
 
 // Conversion
 

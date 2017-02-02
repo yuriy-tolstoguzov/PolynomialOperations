@@ -9,8 +9,6 @@
 #ifndef RationalPolynomialOperations_h
 #define RationalPolynomialOperations_h
 
-#include <string.h>
-
 #include "PolynomialOperations.h"
 
 typedef struct {

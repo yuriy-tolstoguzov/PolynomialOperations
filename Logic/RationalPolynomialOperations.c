@@ -7,6 +7,8 @@
 //
 
 #include "RationalPolynomialOperations.h"
+#include <string.h>
+#include <stdbool.h>
 
 void r_pln_init(r_pln_t *pln_ptr) {
     pln_init((*pln_ptr).numerator);

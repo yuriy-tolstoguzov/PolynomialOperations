@@ -6,9 +6,8 @@
 //  Copyright © 2017 Yuriy Tolstoguzov. All rights reserved.
 //
 
-#include <stdio.h>
-#include <stdbool.h>
 #include "PolynomialDecimation.h"
+#include <stdbool.h>
 
 void pln_decimate(pln_t *rop, pln_t op1, unsigned int op2) {
     size_t size = pln_mat_size(op1);

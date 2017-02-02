@@ -10,7 +10,6 @@
 #import "libPolynomialOperations.h"
 #import "TestUtils.h"
 
-
 @interface MultiplicationTests : XCTestCase
 
 @end
@@ -29,10 +28,10 @@
     pln_init(rop);
     pln_mul(rop, lhs, rhs);
 
-    pln_t expectedResult;
-    pln_init_set_ui(expectedResult, 0b0);
+    pln_t expected_rop;
+    pln_init_set_ui(expected_rop, 0b0);
 
-    XCTAssertEqual(pln_cmp(rop, expectedResult), kCompareFlagEqual);
+    XCTAssertEqual(pln_cmp(rop, expected_rop), kCompareFlagEqual);
 }
 
 - (void)testMultiplication0x1 {
@@ -46,10 +45,10 @@
     pln_init(rop);
     pln_mul(rop, lhs, rhs);
 
-    pln_t expectedResult;
-    pln_init_set_ui(expectedResult, 0b0);
+    pln_t expected_rop;
+    pln_init_set_ui(expected_rop, 0b0);
 
-    XCTAssertEqual(pln_cmp(rop, expectedResult), kCompareFlagEqual);
+    XCTAssertEqual(pln_cmp(rop, expected_rop), kCompareFlagEqual);
 }
 
 - (void)testMultiplication1x1 {
@@ -63,10 +62,10 @@
     pln_init(rop);
     pln_mul(rop, lhs, rhs);
 
-    pln_t expectedResult;
-    pln_init_set_ui(expectedResult, 0b1);
+    pln_t expected_rop;
+    pln_init_set_ui(expected_rop, 0b1);
 
-    XCTAssertEqual(pln_cmp(rop, expectedResult), kCompareFlagEqual);
+    XCTAssertEqual(pln_cmp(rop, expected_rop), kCompareFlagEqual);
 }
 
 - (void)testMultiplication11x10 {
@@ -80,10 +79,10 @@
     pln_init(rop);
     pln_mul(rop, lhs, rhs);
 
-    pln_t expectedResult;
-    pln_init_set_ui(expectedResult, 0b110);
+    pln_t expected_rop;
+    pln_init_set_ui(expected_rop, 0b110);
 
-    XCTAssertEqual(pln_cmp(rop, expectedResult), kCompareFlagEqual);
+    XCTAssertEqual(pln_cmp(rop, expected_rop), kCompareFlagEqual);
 }
 
 - (void)testMultiplication111x11 {
@@ -97,10 +96,10 @@
     pln_init(rop);
     pln_mul(rop, lhs, rhs);
 
-    pln_t expectedResult;
-    pln_init_set_ui(expectedResult, 0b1001);
+    pln_t expected_rop;
+    pln_init_set_ui(expected_rop, 0b1001);
 
-    XCTAssertEqual(pln_cmp(rop, expectedResult), kCompareFlagEqual);
+    XCTAssertEqual(pln_cmp(rop, expected_rop), kCompareFlagEqual);
 }
 
 
@@ -117,11 +116,11 @@
     pln_init(rop);
     pln_mul(rop, op1, op2);
 
-    pln_t expectedResult;
-    pln_init(expectedResult);
-    pln_set_str(expectedResult, "400000000000000000000000000000000000000001441", 16);
+    pln_t expected_rop;
+    pln_init(expected_rop);
+    pln_set_str(expected_rop, "400000000000000000000000000000000000000001441", 16);
 
-    XCTAssertEqual(pln_cmp(rop, expectedResult), kCompareFlagEqual);
+    XCTAssertEqual(pln_cmp(rop, expected_rop), kCompareFlagEqual);
 }
 
 @end

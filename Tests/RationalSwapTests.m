@@ -14,6 +14,7 @@
 
 @end
 
+
 @implementation RationalSwapTests
 
 - (void)testSwap0_1__1_1 {
@@ -25,13 +26,13 @@
 
     r_pln_swap(&op1, &op2);
 
-    r_pln_t expectedOp1;
-    r_pln_init_set_ui(&expectedOp1, 0b1);
-    XCTAssertEqual(r_pln_cmp(&op1, expectedOp1), kCompareFlagEqual);
+    r_pln_t expected_op1;
+    r_pln_init_set_ui(&expected_op1, 0b1);
+    XCTAssertEqual(r_pln_cmp(&op1, expected_op1), kCompareFlagEqual);
 
-    r_pln_t expectedOp2;
-    r_pln_init_set_ui(&expectedOp2, 0b0);
-    XCTAssertEqual(r_pln_cmp(&op2, expectedOp2), kCompareFlagEqual);
+    r_pln_t expected_op2;
+    r_pln_init_set_ui(&expected_op2, 0b0);
+    XCTAssertEqual(r_pln_cmp(&op2, expected_op2), kCompareFlagEqual);
 }
 
 - (void)testSwap10_11__11_1 {
@@ -44,14 +45,14 @@
 
     r_pln_swap(&op1, &op2);
 
-    r_pln_t expectedOp1;
-    r_pln_init_set_ui(&expectedOp1, 0b11);
-    XCTAssertEqual(r_pln_cmp(&op1, expectedOp1), kCompareFlagEqual);
+    r_pln_t expected_op1;
+    r_pln_init_set_ui(&expected_op1, 0b11);
+    XCTAssertEqual(r_pln_cmp(&op1, expected_op1), kCompareFlagEqual);
 
-    r_pln_t expectedOp2;
-    r_pln_init_set_ui(&expectedOp2, 0b10);
-    pln_set_ui(expectedOp2.denominator, 0b11);
-    XCTAssertEqual(r_pln_cmp(&op2, expectedOp2), kCompareFlagEqual);
+    r_pln_t expected_op2;
+    r_pln_init_set_ui(&expected_op2, 0b10);
+    pln_set_ui(expected_op2.denominator, 0b11);
+    XCTAssertEqual(r_pln_cmp(&op2, expected_op2), kCompareFlagEqual);
 }
 
 @end
